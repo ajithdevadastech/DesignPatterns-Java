@@ -14,6 +14,20 @@ public class Driver {
 		
 		//The string "Lazy Singleton implementation" is only displayed 
 		//one time since the object is only created once.
+		
+		//This implementation is not thread-safe. If multiple threads call getInstance() 
+		//simultaneously when instance is null, it's possible to create multiple instances.
+		
+		System.out.println("Singleton - Threadsafe synchronized instantiation");
+		ThreadSafeSingleton tss1 = ThreadSafeSingleton.getInstance();
+		ThreadSafeSingleton tss2 = ThreadSafeSingleton.getInstance();
+		
+		System.out.println("Singleton - Double check locking instantiation");
+		DoubleCheckedSingleton dss1 = DoubleCheckedSingleton.getInstance();
+		DoubleCheckedSingleton dss2 = DoubleCheckedSingleton.getInstance();
+		
+		
+		
 	}
 
 }
