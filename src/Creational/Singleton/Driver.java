@@ -13,7 +13,7 @@ public class Driver {
 		LazySingleton ls2 = LazySingleton.getInstance();
 		
 		//The string "Lazy Singleton implementation" is only displayed 
-		//once since the object is only created once.
+		//one time since the object is only created once.
 	}
 
 }
