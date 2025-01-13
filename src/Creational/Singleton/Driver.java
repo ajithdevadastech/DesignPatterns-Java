@@ -26,6 +26,10 @@ public class Driver {
 		DoubleCheckedSingleton dss1 = DoubleCheckedSingleton.getInstance();
 		DoubleCheckedSingleton dss2 = DoubleCheckedSingleton.getInstance();
 		
+		System.out.println("Singleton - Eager instantiation");
+		EagerSingleton es1 = EagerSingleton.getInstance();
+		EagerSingleton es2 = EagerSingleton.getInstance();
+		
 		
 		
 	}
