@@ -32,6 +32,10 @@ public class Driver {
 		EagerSingleton es1 = EagerSingleton.getInstance();
 		EagerSingleton es2 = EagerSingleton.getInstance();
 		
+		System.out.println("Singleton - Bill Pugh instantiation");
+		BillPughSingleton bp1 = BillPughSingleton.getInstance();
+		BillPughSingleton bp2 = BillPughSingleton.getInstance();
+		
 		
 		
 	}
