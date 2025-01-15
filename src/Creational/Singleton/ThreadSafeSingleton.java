@@ -19,5 +19,10 @@ public class ThreadSafeSingleton {
 	}
 	
 	//reference: https://blog.algomaster.io/p/singleton-design-pattern
+	
+	public void showMessage()
+	{
+		System.out.println(this.hashCode());
+	}
 
 }

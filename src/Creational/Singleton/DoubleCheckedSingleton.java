@@ -21,5 +21,10 @@ public class DoubleCheckedSingleton {
 		
 		return doubleCheckedSingleton;
 	}
+	
+	public void showMessage()
+	{
+		System.out.println(this.hashCode());
+	}
 
 }

@@ -14,4 +14,9 @@ public class EagerSingleton {
 		return eagerSingleton;
 	}
 	//instance is created before knowing if its really required.
+	
+	public void showMessage()
+	{
+		System.out.println(this.hashCode());
+	}
 }

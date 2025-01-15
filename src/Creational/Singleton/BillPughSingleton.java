@@ -16,5 +16,10 @@ public class BillPughSingleton {
 	{
 		return SingletonInstance.billPughSingleton;
 	}
+	
+	public void showMessage()
+	{
+		System.out.println(this.hashCode());
+	}
 
 }

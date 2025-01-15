@@ -27,4 +27,9 @@ public class LazySingleton {
 	
 	//This implementation is not thread-safe. If multiple threads call getInstance() 
 	//simultaneously when instance is null, it's possible to create multiple instances.
+	
+	public void showMessage()
+	{
+		System.out.println(this.hashCode());
+	}
 }
