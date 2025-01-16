@@ -5,6 +5,11 @@ public class ThreadSafeSingleton {
 	private ThreadSafeSingleton()
 	{
 		System.out.println("Thread Safe Singleton using Synchorization");
+		//protection against reflection
+		if (threadSafeSingleton != null)
+		{
+			throw new IllegalStateException("Singleton Instance already created.");
+		}
 	}
 	
 	private static ThreadSafeSingleton threadSafeSingleton;

@@ -5,6 +5,11 @@ public class BillPughSingleton {
 	private BillPughSingleton()
 	{
 		System.out.println("Bill Pugh Singleton Implementation");
+		//protection against reflection
+//		if (billPughSingleton != null)
+//		{
+//			throw new IllegalStateException("Singleton Instance already created.");
+//		}
 	}
 	
 	private static class SingletonInstance

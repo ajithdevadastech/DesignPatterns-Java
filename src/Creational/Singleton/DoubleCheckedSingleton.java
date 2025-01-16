@@ -5,6 +5,11 @@ public class DoubleCheckedSingleton {
 	private DoubleCheckedSingleton()
 	{
 		System.out.println("Double Check locking method - Singleton");
+		//protection against reflection
+		if (doubleCheckedSingleton != null)
+		{
+			throw new IllegalStateException("Singleton Instance already created.");
+		}
 	}
 	
 	private static DoubleCheckedSingleton doubleCheckedSingleton;

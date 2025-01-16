@@ -5,7 +5,12 @@ public class LazySingleton {
 	//private constructor
 	private LazySingleton() 
 	{
+		//protection against reflection
 		System.out.println("Lazy Singleton implementation");
+		if (instance != null)
+		{
+			throw new IllegalStateException("Singleton Instance already created.");
+		}
 	}
 	
 	//single variable, null value

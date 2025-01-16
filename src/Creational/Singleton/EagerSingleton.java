@@ -5,6 +5,11 @@ public class EagerSingleton {
 	private EagerSingleton()
 	{
 		System.out.println("Eager Singleton implementation");
+		//protection against reflection
+		if (eagerSingleton != null)
+		{
+			throw new IllegalStateException("Singleton Instance already created.");
+		}
 	}
 	
 	private static EagerSingleton eagerSingleton = new EagerSingleton();
